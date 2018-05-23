@@ -1,0 +1,58 @@
+CREATE DATABASE  IF NOT EXISTS `dbhmo` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `dbhmo`;
+-- MySQL dump 10.13  Distrib 5.7.12, for Win64 (x86_64)
+--
+-- Host: 127.0.0.1    Database: dbhmo
+-- ------------------------------------------------------
+-- Server version	5.5.5-10.1.16-MariaDB
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `tblplantype`
+--
+
+DROP TABLE IF EXISTS `tblplantype`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tblplantype` (
+  `intPlanTypeID` int(11) NOT NULL AUTO_INCREMENT,
+  `intPlanID` int(11) NOT NULL,
+  `intTypeID` int(11) NOT NULL,
+  PRIMARY KEY (`intPlanTypeID`),
+  KEY `intPlanTypeID_idx` (`intTypeID`),
+  KEY `intPlanTypeID_idx1` (`intPlanID`),
+  CONSTRAINT `intPlanTypeID` FOREIGN KEY (`intPlanID`) REFERENCES `tblplan` (`planID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `intTypePlanID` FOREIGN KEY (`intTypeID`) REFERENCES `tblmembershiptype` (`membershipID`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=135 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tblplantype`
+--
+
+LOCK TABLES `tblplantype` WRITE;
+/*!40000 ALTER TABLE `tblplantype` DISABLE KEYS */;
+INSERT INTO `tblplantype` VALUES (76,4,4),(77,4,8),(84,5,7),(96,2,4),(97,2,8),(98,3,5),(99,3,7),(104,7,4),(105,7,8),(106,8,7),(114,1,4),(115,1,7),(126,11,4),(127,11,9),(128,11,7),(129,11,8),(130,9,9),(132,12,11),(133,13,4),(134,13,7);
+/*!40000 ALTER TABLE `tblplantype` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-01-21  6:11:54

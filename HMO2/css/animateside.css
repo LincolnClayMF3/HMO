@@ -1,0 +1,18 @@
+.animate-side {
+  position: absolute;
+  -webkit-animation-name: animateside;
+  -webkit-animation-duration: 1s;
+  animation-name: animateside;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animateside {
+  from { left:-200px; opacity:0 }
+  to { left:200px; opacity:1 }
+}
+
+@keyframes animateside {
+  from{ left:-200px; opacity:0 }
+  to{ left:0; opacity:1 }
+}
+

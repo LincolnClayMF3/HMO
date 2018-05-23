@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://www.setasign.com/products/fpdi/about -->
+<html class="wf-fftisawebpro-n7-active wf-fftisawebpro-i7-active wf-fftisawebpro-i4-active wf-fftisawebpro-n4-active wf-sourcecodepro-n7-active wf-sourcecodepro-n4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Import existing PDF documents into FPDF - FPDI is a free and open source PHP class | Setasign</title>
+<meta name="description" content="FPDI is a collection of PHP classes facilitating developers to read pages from existing PDF documents and use them as templates in FPDF.">
+<meta name="author" content="Setasign, https://www.setasign.com">
+<meta property="og:image" content="https://www.setasign.com/images/products/fpdi-ws.png">
+<meta property="og:site_name" content="Setasign">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.setasign.com/products/fpdi/about/">
+<meta property="og:title" content="Import existing PDF documents into FPDF - FPDI is a free and open source PHP class">
+<meta property="og:description" content="FPDI is a collection of PHP classes facilitating developers to read pages from existing PDF documents and use them as templates in FPDF.">
+<meta property="og:locale" content="en_US">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="imagetoolbar" content="no">
+<link rel="stylesheet" type="text/css" href="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/font-awesome.min.css" integrity="sha256-AIodEDkC8V/bHBkfyxzolUMw57jeQ9CauwhVW6YJ9CA=" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/normalize.css">
+<link rel="stylesheet" type="text/css" href="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/global.css">
+<link rel="stylesheet" type="text/css" href="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/demos.css">
+<link rel="stylesheet" type="text/css" href="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/codemirror.css">
+<link rel="stylesheet" type="text/css" href="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/sweetalert.css" integrity="sha256-k66BSDvi6XBdtM2RH6QQvCz2wk81XcWsiZ3kn6uFTmM=" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/products.css">
+<link rel="shortcut icon" href="https://www.setasign.com/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://www.setasign.com/favicon.ico" tpye="image/x-icon">
+<link rel="apple-touch-icon" href="https://www.setasign.com/apple-touch-icon.png">
+<script type="text/javascript" async="" src="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/ga.js"></script><script type="text/javascript" src="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/jquery.blockUI.min.js" integrity="sha256-9wSYpoBdTOlj3azv4n74Mlb984+xKfTS7dhcYRqSqMA=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/codemirror.min.js"></script>
+<script type="text/javascript" src="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/clipboard.min.js" integrity="sha256-YPxFEfHAzLj9n2T+2UXAKGNCRUINk0BexppujiVhRH0=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/sweetalert.min.js" integrity="sha256-egVvxkq6UBCQyKzRBrDHu8miZ5FOaVrjSqQqauKglKc=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/detectAdobeReader.js"></script>
+<script type="text/javascript" src="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/izt8ycx.js"></script>
+<script type="text/javascript" src="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/scripts.js"></script>
+<!--[if lte IE 10]>
+<link rel="stylesheet" type="text/css" href="/style/ie.css" />
+<![endif]-->
+<style type="text/css">.tk-ff-tisa-web-pro{font-family:"ff-tisa-web-pro",serif;}.tk-source-code-pro{font-family:"source-code-pro",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-ff-tisa-web-pro-n7;src:url(https://fonts.typekit.net/af/85938d/00000000000000000001707c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7) format("woff2");font-weight:700;font-style:normal;}@font-face{font-family:tk-ff-tisa-web-pro-i7;src:url(https://fonts.typekit.net/af/354473/00000000000000000001707d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7) format("woff2");font-weight:700;font-style:italic;}@font-face{font-family:tk-ff-tisa-web-pro-i4;src:url(https://fonts.typekit.net/af/851cae/000000000000000000017080/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4) format("woff2");font-weight:400;font-style:italic;}@font-face{font-family:tk-ff-tisa-web-pro-n4;src:url(https://fonts.typekit.net/af/9d5abb/000000000000000000017087/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4) format("woff2");font-weight:400;font-style:normal;}@font-face{font-family:tk-source-code-pro-n7;src:url(https://fonts.typekit.net/af/269954/0000000000000000000179d5/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:700;font-style:normal;}@font-face{font-family:tk-source-code-pro-n4;src:url(https://fonts.typekit.net/af/9b5d7b/0000000000000000000179cf/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:400;font-style:normal;}</style><script type="text/javascript">
+    try{Typekit.load({ async: true });}catch(e){}
+</script>
+<script type="text/javascript"></script><style type="text/css">@font-face{font-family:ff-tisa-web-pro;src:url(https://fonts.typekit.net/af/85938d/00000000000000000001707c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7) format("woff2");font-weight:700;font-style:normal;}@font-face{font-family:ff-tisa-web-pro;src:url(https://fonts.typekit.net/af/354473/00000000000000000001707d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7) format("woff2");font-weight:700;font-style:italic;}@font-face{font-family:ff-tisa-web-pro;src:url(https://fonts.typekit.net/af/851cae/000000000000000000017080/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4) format("woff2");font-weight:400;font-style:italic;}@font-face{font-family:ff-tisa-web-pro;src:url(https://fonts.typekit.net/af/9d5abb/000000000000000000017087/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4) format("woff2");font-weight:400;font-style:normal;}@font-face{font-family:source-code-pro;src:url(https://fonts.typekit.net/af/269954/0000000000000000000179d5/27/l?subset_id=2&fvd=n7) format("woff2");font-weight:700;font-style:normal;}@font-face{font-family:source-code-pro;src:url(https://fonts.typekit.net/af/9b5d7b/0000000000000000000179cf/27/l?subset_id=2&fvd=n4) format("woff2");font-weight:400;font-style:normal;}</style><link rel="stylesheet" type="text/css" href="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/ndhui.css"></head>
+<body style="height: 1397px;"><script type="text/javascript" language="javascript" src="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/ndhui.js"></script>
+<div id="head">
+    <div class="wrapper">
+        <a href="https://www.setasign.com/"><img src="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/logo.png"></a>
+            <nav>
+        <ul>
+                            <li class="active hasSubs">
+                    <a href="https://www.setasign.com/products/" title="Products">Products</a>
+                                            <ul>
+                                                    <li>
+                                <a href="https://www.setasign.com/products/setapdf-core/" title="SetaPDF-Core">SetaPDF-Core</a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.setasign.com/products/setapdf-extractor/" title="SetaPDF-Extractor">SetaPDF-Extractor</a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.setasign.com/products/setapdf-formfiller/" title="SetaPDF-FormFiller">SetaPDF-FormFiller</a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.setasign.com/products/setapdf-merger/" title="SetaPDF-Merger">SetaPDF-Merger</a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.setasign.com/products/setapdf-signer/" title="SetaPDF-Signer">SetaPDF-Signer</a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.setasign.com/products/setapdf-stamper/" title="SetaPDF-Stamper">SetaPDF-Stamper</a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.setasign.com/products/fpdi/" title="FPDI">FPDI</a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.setasign.com/products/fpdi-pdf-parser/" title="FPDI PDF-Parser">FPDI PDF-Parser</a>
+                            </li>
+                                                </ul>
+                                    </li>
+                            <li class=" hasSubs">
+                    <a href="https://www.setasign.com/support/" title="Support">Support</a>
+                                            <ul>
+                                                    <li>
+                                <a href="https://www.setasign.com/support/faq/" title="FAQ">FAQ</a>
+                            </li>
+                                                    <li>
+                                <a href="https://www.setasign.com/support/manuals/" title="Manuals">Manuals</a>
+                            </li>
+                                                </ul>
+                                    </li>
+                            <li class=" hasSubs">
+                    <a href="https://www.setasign.com/about-us/" title="About Us">About Us</a>
+                                            <ul>
+                                                    <li>
+                                <a href="https://www.setasign.com/about-us/our-clients/" title="Our Clients">Our Clients</a>
+                            </li>
+                                                </ul>
+                                    </li>
+                            <li class="">
+                    <a href="https://www.setasign.com/contact/" title="Contact">Contact</a>
+                                    </li>
+                    </ul>
+    </nav><!--end navigation-->        <div id="search">
+    <form method="get" action="https://www.setasign.com/searchresults/">
+        <div><input type="text" name="q" class="text" placeholder="Search" value=""><input type="submit" class="submit" value=""></div>
+    </form>
+</div>    </div>
+</div>
+
+<div id="breadcrumb">
+    <div class="wrapper">
+            <nav>
+        <ul itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                                                <li itemprop="title"><a href="https://www.setasign.com/" title="Home" itemprop="url">Home</a></li>
+                                                                <li itemprop="title"><a href="https://www.setasign.com/products/" title="Products" itemprop="url">Products</a></li>
+                                                                <li itemprop="title"><a href="https://www.setasign.com/products/fpdi/" title="FPDI" itemprop="url">FPDI</a></li>
+                                                                <li itemprop="title" class="last"><a href="https://www.setasign.com/products/fpdi/about/" title="About" itemprop="url">About</a></li>
+                                    </ul>
+    </nav>
+        <div class="loginLink">
+        <a href="https://www.setasign.com/login/login" id="loginLink"><i class="fa fa-lock"></i> Login</a>
+    <div class="hoverBox loginBox" id="loginBox">
+        <form action="https://www.setasign.com/login/login" method="post">
+                    <fieldset>
+                <label for="user">Email</label>
+                <input type="text" name="user" id="user">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+
+                <button type="submit" name="login">Login</button>
+            </fieldset>
+        </form>
+        <div class="footer">
+            <p>
+                <a href="https://www.setasign.com/forgotten-password/">Forgotten your password?</a><br>
+                <a href="https://www.setasign.com/register/">Register now</a>
+            </p>
+        </div>
+    </div>
+    </div>            </div>
+</div>
+
+<header>
+    <div class="wrapper product">
+            <img width="249" height="249" title="Import pages from existing PDF documents and use them as templates in FPDF" alt="Import pages from existing PDF documents and use them as templates in FPDF" src="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/fpdi.png">
+<h1>FPDI</h1>
+    <h2>Import pages from existing PDF documents and use them as templates in FPDF</h2>
+    </div>
+</header>
+
+<div id="subnavi" class="fly" style="top: 0px;">
+    <div class="wrapper">
+        <ul class="product">
+            <li>
+                <a href="https://www.setasign.com/products/fpdi/about/" class="active about">
+                    About                </a>
+            </li>
+            <li>
+                <a href="https://www.setasign.com/products/fpdi/demos/" class="demos">
+                    Demos                </a>
+            </li>
+            <li>
+                <a href="https://www.setasign.com/products/fpdi/downloads/" class="downloads">
+                    Downloads                </a>
+            </li>
+            <li>
+                <a href="https://www.setasign.com/products/fpdi/manual/" class="manual">
+                    Manual                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="content">
+    <div class="wrapper product">
+        <div class="left">
+            <h2>Free PDF Document Importer</h2><p>FPDI is a collection of PHP classes facilitating developers to read pages from existing PDF documents and use them as templates in <a target="_blank" href="http://www.fpdf.org/">FPDF</a>, which was developed by Olivier Plathey. Apart from a copy of <a target="_blank" href="http://www.fpdf.org/">FPDF</a>, FPDI does not require any special PHP extensions.</p><p>As of version 1.2.1 FPDI can also be used with <a target="_blank" href="http://www.tcpdf.org/">TCPDF</a>.</p><p>FPDI is&nbsp;published under the <a target="_blank" href="https://tldrlegal.com/license/mit-license">MIT license</a> as of version 1.6 (Versions before were released under the Apache Software License, Version 2.0).</p><p>The usage is very easy: open the document, put a page into a template, and use it like an image!</p>
+
+<div id="57c3465f86eec" class="setapdf-demos hasPdfReader">
+    <div class="run">
+        <ul style="margin-top: 0px;">
+            <li>
+                <a href="https://www.setasign.com/products/fpdi/about#code" title="Show PHP source code" class=""></a>
+            </li>
+            <li>
+                <a href="https://www.setasign.com/products/fpdi/about#result" title="Run PHP script" class="inactive"></a>
+            </li>
+        </ul>
+    </div>
+    <form class="demo" action="https://www.setasign.com/setasign-demos/Fpdi/Simple2/Simple2/" method="post" enctype="multipart/form-data" target="tmpIframe">
+        <div class="step code">
+            <div class="phpInfo" title="The PHP source code that is executed by this demo.">PHP</div>
+<ul class="buttons">
+    <li><a class="copy">copy</a></li>
+</ul>
+<pre class="code cm-s-default" data-lang="php"><span class="cm-meta">&lt;?php</span>
+<span class="cm-keyword">require_once</span>(<span class="cm-string">'fpdf.php'</span>);
+<span class="cm-keyword">require_once</span>(<span class="cm-string">'fpdi.php'</span>);
+
+<span class="cm-variable-2">$pdf</span> <span class="cm-operator">=</span> <span class="cm-keyword">new</span> <span class="cm-variable">FPDI</span>();
+
+<span class="cm-variable-2">$pageCount</span> <span class="cm-operator">=</span> <span class="cm-variable-2">$pdf</span><span class="cm-operator">-&gt;</span><span class="cm-variable">setSourceFile</span>(<span class="cm-string">'Fantastic-Speaker.pdf'</span>);
+<span class="cm-variable-2">$tplIdx</span> <span class="cm-operator">=</span> <span class="cm-variable-2">$pdf</span><span class="cm-operator">-&gt;</span><span class="cm-variable">importPage</span>(<span class="cm-number">1</span>, <span class="cm-string">'/MediaBox'</span>);
+
+<span class="cm-variable-2">$pdf</span><span class="cm-operator">-&gt;</span><span class="cm-variable">addPage</span>();
+<span class="cm-variable-2">$pdf</span><span class="cm-operator">-&gt;</span><span class="cm-variable">useTemplate</span>(<span class="cm-variable-2">$tplIdx</span>, <span class="cm-number">10</span>, <span class="cm-number">10</span>, <span class="cm-number">90</span>);
+
+<span class="cm-variable-2">$pdf</span><span class="cm-operator">-&gt;</span><span class="cm-variable">Output</span>();</pre>
+<script type="text/javascript">
+    $(function() {
+        var rootNode = $('div.setapdf-demos#57c3465f86eec'),
+            codeNode = $('form.demo > .code', rootNode);
+
+        codeNode.on('show', function() {
+            $('a[href="#result"]', rootNode).removeClass('disabled').addClass('inactive');
+        });
+    });
+</script>        </div>
+        <div class="step result" style="display: none;">
+            <span></span>
+<iframe src="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/gif.html" style="display:none;" __idm_frm__="113"></iframe>
+
+<script type="text/javascript">
+    $(function() {
+        var outputText = false,
+            needAdobeReader = false,
+            rootNode = $('div.setapdf-demos#57c3465f86eec'),
+            resultNode = $('.result', rootNode);
+
+        var showErrorMsg = function(error) {
+            if (error != '') {
+                swal('Error', error, 'error');
+            }
+            $('a[href="#result"]:first', rootNode).parent().prev().children().click();
+        };
+
+        resultNode.on('show', function() {
+            var form = resultNode.parentsUntil(rootNode, 'form.demo').get(0),
+                scriptOutput = $('div.result > span', form),
+                iframe = $('div.result > iframe', form),
+                action = form.action + '?action=executeScript';
+
+            if (iframe.data('src') == action) {
+                return;
+            }
+
+            if (resultNode.attr('data-is-loading') == 1) {
+                // is loading
+                return;
+            }
+            resultNode.attr('data-is-loading', 1);
+
+            scriptOutput.empty();
+            
+            var hasAdobe = rootNode.hasClass('hasAdobe'),
+                hasPdfReader = rootNode.hasClass('hasPdfReader'),
+                noPluginAvailable =
+                    '<p class="hint">'
+                    + 'Your browser seems not to support inline viewing of PDF documents.<br />'
+                    + 'You can download the resulting PDF '
+                    + '<a href="' + action + '" target="_blank">here</a>.'
+                    + '</p>';
+
+            if (!outputText && needAdobeReader && !hasAdobe) {
+                // no adobe
+                scriptOutput.append(
+                    '<p class="hint">'
+                    + 'This demo needs the Adobe Reader but your browser seems not to use the Adobe Reader as PDF viewer.<br />'
+                    + 'You can download the resulting PDF '
+                    + '<a href="' + action + '" target="_blank">here</a> (just right click and Save As).'
+                    + '</p>'
+                );
+                iframe.hide();
+            } else if (!outputText && !hasPdfReader) {
+                scriptOutput.append(noPluginAvailable);
+                iframe.hide();
+            } else {
+                //inline
+                iframe.show();
+                iframe.get(0).src = action;
+                window.setTimeout(function() {
+                    var body;
+                    try {
+                        body = iframe.get(0).contentWindow.document.body;
+                    } catch (e) {
+                    }
+
+                    if (typeof body != 'undefined' && typeof body.childNodes[0] != 'undefined' && body.childNodes[0].tagName == 'IMG') {
+                        iframe.hide();
+                        scriptOutput.append(noPluginAvailable);
+                    }
+                }, 500);
+            }
+
+            iframe.data('src', action);
+            resultNode.attr('data-is-loading', 0);
+        });
+    });
+</script>        </div>
+    </form>
+    <div class="run bottom">
+        <ul>
+            <li>
+                <a href="https://www.setasign.com/products/fpdi/about#code" title="Show PHP source code" class=""> <span>Code</span></a>
+            </li>
+            <li>
+                <a href="https://www.setasign.com/products/fpdi/about#result" title="Run PHP script" class="inactive"> <span>Run</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function() {
+    var rootNode = $('div.setapdf-demos#57c3465f86eec');
+
+    var AdobePlugin = {
+        id:1,
+        name:"AdobeReader",
+        status:-3,
+        version:null,
+        minVersion:"11,0,0,0",
+        info:null,
+        done:0
+    }, PDFjsPlugin = {
+        id:2,
+        name:"PDFjs",
+        status:-3,
+        version:null,
+        minVersion:"0",
+        info:null,
+        done:0
+    }, PDFReaderPlugin = {
+        id:3,
+        name:"PDFReader",
+        status:-3,
+        version:null,
+        minVersion:"0",
+        info:null,
+        done:0
+    };
+
+    var emptyPdf = "/js/empty.pdf",    // for PDFjs and PDFReader
+        adobePdf = "/js/detectAdobe.pdf";  // for Adobe Reader
+
+    var ShowResult = function (PluginDetect, plugin1, plugin2, plugin3) {
+
+        plugin1.status = PluginDetect.isMinVersion(plugin1.name, plugin1.minVersion);
+        plugin1.version = PluginDetect.getVersion(plugin1.name);
+        plugin1.info = PluginDetect.getInfo(plugin1.name);
+        plugin1.done=1;
+
+        if (!plugin2.done || !plugin3.done) {
+            return;
+        }
+
+        // When we reach this point, all plugin detections have completed.
+        // Now we show the results.
+        var adobe = (plugin1.id==1 ? plugin1 : (plugin2.id==1 ? plugin2 : plugin3)),
+            pdfjs = (plugin1.id==2 ? plugin1 : (plugin2.id==2 ? plugin2 : plugin3)),
+            pdfreader = (plugin1.id==3 ? plugin1 : (plugin2.id==3 ? plugin2 : plugin3));
+
+        if (pdfjs.status >= 0) {
+            //pdfjs
+            rootNode.addClass('hasPdfReader');
+        } else if (adobe.status == -1) {
+            if (pdfreader.status == 0) {
+                // pdf viewer
+                rootNode.addClass('hasPdfReader');
+            } else {
+                // no pdf viewer
+            }
+        } else if (adobe.status == 1) {
+            // adobe is active
+            rootNode.addClass('hasPdfReader').addClass('hasAdobe');
+        } else {
+            // error
+        }
+        rootNode.removeClass('testPdfReader');
+        rootNode.trigger('pdfReaderCheckCompleted');
+
+//        console.info("Adobe plugin version: " + adobe.version);
+//        console.info("Adobe plugin status: " + adobe.status);
+//        console.info("pdfjs plugin version: " + pdfjs.version);
+//        console.info("pdfjs plugin status: " + pdfjs.status);
+//        console.info("pdfreader plugin version: " + pdfreader.version);
+//        console.info("pdfreader plugin status: " + pdfreader.status);
+    };
+
+    PluginDetect.onDetectionDone(AdobePlugin.name, [ShowResult, AdobePlugin, PDFjsPlugin, PDFReaderPlugin], adobePdf);
+    PluginDetect.onDetectionDone(PDFjsPlugin.name, [ShowResult, PDFjsPlugin, PDFReaderPlugin, AdobePlugin], emptyPdf);
+    PluginDetect.onDetectionDone(PDFReaderPlugin.name, [ShowResult, PDFReaderPlugin, AdobePlugin, PDFjsPlugin], emptyPdf);
+
+    $('div.run li a', rootNode).on('click', function(event) {
+        var button = $(this);
+
+        if (button.hasClass('disabled')) {
+            event.preventDefault();
+            return;
+        }
+
+        var run = button.parentsUntil(rootNode, 'div.run'),
+            form = $('form.demo', rootNode),
+            isBottomRun = run.hasClass('bottom'),
+            run2 = isBottomRun ? form.prev() : form.next();
+
+        var clickedHash = button.get(0).hash;
+        var f = function() {
+            var hash = this.hash;
+            $(this).toggleClass('inactive', hash != clickedHash);
+            var h = hash.substring(1);
+            if (hash == clickedHash) {
+                $('.' + h, form).show().trigger('show');
+            } else {
+                $('.' + h, form).hide();
+            }
+
+            if (run2.offset().top < $(window).scrollTop()) {
+                $(window).scrollTop(form.offset().top - $('#subnavi').find('.wrapper').height());
+            }
+        };
+
+        $('div.run li a', rootNode).each(f);
+
+        $(window).resize();
+
+        event.preventDefault();
+    });
+
+    $('div.run li:first a, div.run.bottom li:first a', rootNode).removeClass('disabled').click();
+
+    if ($(window).attr('infinitive-scroller') != 1) {
+        $(window).attr('infinitive-scroller', 1);
+        // Infinitive scroll
+        var oldScrollTop = 0;
+        $(window).scroll(function() {
+            var scrollTop = $(this).scrollTop() + 30;
+            var newHeight = $(window).height() + scrollTop;
+            oldScrollTop = scrollTop;
+            $('body').height(newHeight);
+        });
+    }
+});
+</script><h3>About</h3><p>FPDI is the first PHP/PDF script by Setasign. Inspired by an article of Marco Tabini in the <a href="http://www.phparch.com/" target="_blank">php[architect]</a> magazine, Setasign wrote the first version of FPDI in 2004.</p><p>It is based on another extension for FPDF that adds a kind of template feature&nbsp;to FPDF: FPDF_TPL. This class is a requirement for FPDI and can be downloaded in the <a href="https://www.setasign.com/products/fpdi/downloads/">downloads area</a>&nbsp;as well. It is bundled in FPDI&nbsp;as of version 1.5.</p><p>FPDF_TPL does not only prepare FPDF for FPDI, but offers many other advantages:</p><ul><li>data of templates are included in a PDF document <b>only once</b> </li><li>less memory usage </li><li>less generation time </li><li>smaller PDF files </li><li>recursive template support (use of templates in templates)</li></ul><p>Examples of use:</p><ul><li>Header generation </li><li>Grids for large tables over several pages </li><li>Table headers </li><li>write behind or in front of a template </li><li>resize a template after creation </li><li>etc.</li>        </ul></div>
+        <div class="right">
+            <h2>It's FREE!</h2><p>The »F« in FPDI stands for »free«: you may use it for any kind of project and adapt it to your needs - the license conditions of the&nbsp;<a target="_blank" href="http://opensource.org/licenses/mit-license">MIT</a> are met nevertheless.</p><p><a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=sales%40setasign%2ede&amp;item_name=FPDI&amp;no_shipping=1&amp;no_note=1&amp;tax=0&amp;currency_code=EUR&amp;bn=PP%2dDonationsBF&amp;lc=US&amp;charset=UTF%2d8" class="img"><img border="2" src="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/x-click-but04.gif" alt="donate via PayPal"></a></p><h2>Miscellaneous</h2><ul><li><a target="_blank" href="https://tldrlegal.com/license/mit-license">MIT License</a> </li><li><a href="https://www.setasign.com/support/faq/fpdi/">FAQ</a> </li><li><a href="https://www.setasign.com/products/fpdi-pdf-parser/details/">FPDI PDF-Parser</a></li></ul><h2>PDF Documents &gt; 1.4</h2><p>Do you need support for PDF documents with a version higher than 1.4? Check out the new <a href="https://www.setasign.com/products/fpdi-pdf-parser/details/">FPDI PDF-Parser</a>!</p><div>
+    <h2>Do you like this product?</h2><p>Then it would be awesome, if you‘d recommend it to your friends!</p>    <ul class="shareList">
+        <li><a target="twitter" href="https://twitter.com/share?url=https%3A%2F%2Fwww.setasign.com%2Fproducts%2Ffpdi%2Fabout%2F&amp;via=Setasign"><i class="fa fa-twitter"></i></a></li>
+        <li><a target="googlePlus" href="https://plus.google.com/share?url=https%3A%2F%2Fwww.setasign.com%2Fproducts%2Ffpdi%2Fabout%2F"><i class="fa fa-google-plus"></i></a></li>
+        <li><a target="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.setasign.com%2Fproducts%2Ffpdi%2Fabout%2F"><i class="fa fa-facebook"></i></a></li>
+        <li><a target="linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.setasign.com%2Fproducts%2Ffpdi%2Fabout%2F"><i class="fa fa-linkedin"></i></a></li>
+        <li><a target="xing" href="https://www.xing.com/app/user?op=share;url=https%3A%2F%2Fwww.setasign.com%2Fproducts%2Ffpdi%2Fabout%2F"><i class="fa fa-xing"></i></a></li>
+        <li><a data-sharetype="stumbleUpon" href="http://www.stumbleupon.com/submit?url=https%3A%2F%2Fwww.setasign.com%2Fproducts%2Ffpdi%2Fabout%2F"><i class="fa fa-stumbleupon"></i></a></li>
+        <li><a target="reddit" href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.setasign.com%2Fproducts%2Ffpdi%2Fabout%2F"><i class="fa fa-reddit-alien"></i></a></li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+$(function() {
+    $('ul.shareList a').click(function() {
+        var target = this.target,
+            sizes = {
+                facebook : [626, 436],
+                pintarest : [630, 300],
+                googlePlus : [600, 500],
+                linkedin : [520, 570],
+                reddit: [900, 800]
+            },
+            size = sizes[target] || [600, 500];
+
+        window.open(this.href, target,
+            'width=' + size[0] + ',height=' + size[1] + ',resizable=yes'
+        );
+        return false;
+    });
+})
+</script>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="wrapper">
+        <div class="copyright">
+    © 2007 - 2016 Setasign · <a href="https://www.setasign.com/contact/">Contact / Imprint</a>
+</div>        <div class="followUs">
+    <ul class="followUsList">
+        <li>Follow us:</li>
+                <li><a href="https://facebook.com/Setasign" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/Setasign" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://plus.google.com/106919354038491263515" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://github.com/Setasign" target="_blank"><i class="fa fa-github"></i></a></li>
+            </ul>
+</div>
+    </div>
+</footer><iframe style="display:none;" id="tmpIframe" name="tmpIframe" src="./Import existing PDF documents into FPDF - FPDI is a free and open source PHP class _ Setasign_files/saved_resource.html"></iframe>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1918814-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+<div id="tf_hui_container" dir="ltr" onselectstart="return false;" style="position: fixed;"><div id="nd_e506252a6b7649eb9640b54befbe7519_status" class="nd_e506252a6b7649eb9640b54befbe7519_status" style="background-position: 0px 0px;"><label id="labelstatus" class="green">Page is safe</label></div><div id="nd_e506252a6b7649eb9640b54befbe7519_title" class="nd_e506252a6b7649eb9640b54befbe7519_title"><span class="notranslate"><label id="labeltitle">Antivirus Plus 2015</label></span></div><a id="nd_e506252a6b7649eb9640b54befbe7519_tooltip_sandbox" class="nd_e506252a6b7649eb9640b54befbe7519_tool" title="Sandbox" style=""><div id="nd_e506252a6b7649eb9640b54befbe7519_tooltip_sandbox_img"></div></a><a id="nd_e506252a6b7649eb9640b54befbe7519_dragger" class=" nd_e506252a6b7649eb9640b54befbe7519_dragger" title="Click to expand"></a></div></body></html>
